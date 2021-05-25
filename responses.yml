@@ -1,0 +1,35 @@
+responses:
+   utter_greet:
+       - text: |
+           Hello! How can I help you?
+       - text: |
+           Hi!
+   utter_ask_email:
+       - text: |
+           What is your email address?
+   utter_ask_name:
+       - text: |
+           What is your Full name?
+   utter_ask_mobile:
+       - text: |
+           What is your mobile no?
+   utter_ask_bloodgroup:
+       - text: |
+           What is your Blood Group?
+   utter_ask_hospital:
+       - text: |
+           What is your Hospital name?
+   utter_ask_covidpositive:
+       - text: |
+           Are you Covid Positive?
+   utter_ask_nearesthospital:
+       - text: |
+           What is the nearest Hospital name?
+   utter_ask_symptomstartdate:
+       - text: |
+           What is your symptoms start date?
+   utter_subscribed:
+       - text: |
+           Check your inbox at {email} in order to finish subscribing to the newsletter!
+       - text: |
+           You're all set! Check your inbox at {email} to confirm your subscription.

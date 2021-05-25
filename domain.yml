@@ -1,0 +1,97 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- bloodrequest
+- doctor
+- greet
+- inform
+slots:
+  name:
+    type: unfeaturized
+    influence_conversation: false
+  nearesthospital:
+    type: unfeaturized
+    influence_conversation: false
+  covidpositive:
+    type: unfeaturized
+    influence_conversation: false
+  email:
+    type: unfeaturized
+    influence_conversation: false
+  hospital:
+    type: unfeaturized
+    influence_conversation: false
+  symptomstartdate:
+    type: unfeaturized
+    influence_conversation: false
+  mobile:
+    type: unfeaturized
+    influence_conversation: false
+  bloodgroup:
+    type: unfeaturized
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: |
+      Hello! How can I help you?
+  - text: |
+      Hi!
+  utter_ask_email:
+  - text: |
+      What is your email address?
+  utter_ask_name:
+  - text: |
+      What is your Full name?
+  utter_ask_mobile:
+  - text: |
+      What is your mobile no?
+  utter_ask_bloodgroup:
+  - text: |
+      What is your Blood Group?
+  utter_ask_hospital:
+  - text: |
+      What is your Hospital name?
+  utter_ask_covidpositive:
+  - text: |
+      Are you Covid Positive?
+  utter_ask_nearesthospital:
+  - text: |
+      What is the nearest Hospital name?
+  utter_ask_symptomstartdate:
+  - text: |
+      What is your symptoms start date?
+  utter_subscribed:
+  - text: |
+      Check your inbox at {email} in order to finish subscribing to the newsletter!
+  - text: You're all set! Check your inbox at {email} to confirm your subscription.
+actions:
+- '...'
+- utter_greet
+- utter_subscribed
+forms:
+  bloodrequest_form:
+    name:
+    - type: from_text
+    email:
+    - type: from_text
+    mobile:
+    - type: from_text
+    bloodgroup:
+    - type: from_text
+    hospital:
+    - type: from_text
+  doctorrequest_form:
+    name:
+    - type: from_text
+    email:
+    - type: from_text
+    mobile:
+    - type: from_text
+    covidpositive:
+    - type: from_text
+    nearesthospital:
+    - type: from_text
+    symptomstartdate:
+    - type: from_text

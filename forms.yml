@@ -1,0 +1,26 @@
+forms:
+  bloodrequest_form:
+    name:
+    - type: from_text
+    email:
+    - type: from_text
+    mobile:
+    - type: from_text
+    bloodgroup:
+    - type: from_text
+    hospital:
+    - type: from_text
+  doctorrequest_form:
+    name:
+    - type: from_text
+    email:
+    - type: from_text
+    mobile:
+    - type: from_text
+    covidpositive:
+    - type: from_text
+    nearesthospital:
+    - type: from_text
+    symptomstartdate:
+    - type: from_text
+    
