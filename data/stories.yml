@@ -1,0 +1,15 @@
+stories:
+ - story: greet and bloodrequest
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: bloodrequest
+   - action: bloodrequest_form
+   - active_loop: bloodrequest_form
+ - story: greet and doctor
+   steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: doctor
+   - action: doctorrequest_form
+   - active_loop: doctorrequest_form

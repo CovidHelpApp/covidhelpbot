@@ -1,0 +1,28 @@
+rules:
+ - rule: activate bloodrequest form
+   steps:
+   - intent: bloodrequest
+   - action: bloodrequest_form
+   - active_loop: bloodrequest_form
+
+ - rule: submit bloodrequest form
+   condition:
+   - active_loop: bloodrequest_form
+   steps:
+   - action: bloodrequest_form
+   - active_loop: null
+   - action: utter_subscribed
+
+ - rule: activate doctorrequest form
+   steps:
+   - intent: doctorrequest
+   - action: doctorrequest_form
+   - active_loop: doctorrequest_form
+
+ - rule: submit doctorrequest form
+   condition:
+   - active_loop: doctorrequest_form
+   steps:
+   - action: doctorrequest_form
+   - active_loop: null
+   - action: utter_subscribed
